@@ -26,8 +26,8 @@ let adventurous = true;
 console.log(adventurous)
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
-let Food = 'Indian Food';
-console.log(Food)
+let food = 'Indian food';
+console.log(food);
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 let pets = 1;
@@ -45,11 +45,14 @@ console.log(allowedPets)
 //      if it's not true,  set `result` to be "How about we stay home?"
 //      Console log the value of `result`
 let result; 
-if(adventurous == true) {
-  console.log('Adventures are great!')
-}
-else if(adventurous != true );
 
+if(adventurous == true) {
+result = 'Adventures are great!';
+}
+else if(adventurous != true ) {
+  result = 'How about we stay home'
+}
+console.log (result);
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
@@ -58,7 +61,7 @@ else if(adventurous != true );
 let diceRoll = "Try again later.";
 if (luckyNumber ===  2 && adventurous){
   diceRoll = "Roll the dice!";
-}
+};
 console.log (diceRoll);
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -71,14 +74,18 @@ console.log (diceRoll);
 let petStatus 
 
 if(pets < allowedPets ) {
-  console.log('I can have more pets.')
+  petStatus = "I can have more pets";
 }
-else if(pets === allowedPets){
-  console.log('I have enough pets.');
+else if(pets === allowedPets)
+  {
+  petStatus = "I have enough pets";
   }
 else{
-console.log('Oh no i have too many pets!')
+  petStatus = "Oh no, i have too many pets!";
   }
+  console.log (petStatus);
+
+
 // STRETCH GOALS:
 
 // 15 - Make a variable called `mostPets` and a conditional that
@@ -86,8 +93,6 @@ console.log('Oh no i have too many pets!')
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
-let mostPets
-if(pets >)
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
 //      "First is the worst" if your lucky number is 1
